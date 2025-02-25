@@ -58,30 +58,23 @@
         }
         .slide {
             display: none;
-            width: 100%;
-            height: auto;
+            width: 300px;
+            height: 300px;
             object-fit: cover;
             border-radius: 10px;
-        }
-        .floating-text {
-            position: absolute;
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #ffffff;
-            opacity: 1;
-            animation: fadeOut 3s linear forwards;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        @keyframes fadeOut {
-            0% { opacity: 1; }
-            100% { opacity: 0; }
-        }
         @keyframes slideIn {
             from { transform: translateY(-50px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            p { font-size: 1em; }
+            .friends { font-size: 1.3em; }
         }
     </style>
     <script>
@@ -119,6 +112,7 @@
             <div class="slideshow-container">
                 <img class="me-divyank slide" src="photo_me_divyank1.jpg" alt="Me and Divyank">
                 <img class="me-divyank slide" src="photo_me_divyank2.jpg" alt="Me and Divyank">
+                <img class="me-divyank slide" src="photo_me_divyank3.jpg" alt="Me and Divyank">
             </div>
         </div>
         <div class="photo-section">
@@ -127,6 +121,7 @@
             <div class="slideshow-container">
                 <img class="shravani-divyank slide" src="photo_shravani_divyank1.jpg" alt="Shravani and Divyank">
                 <img class="shravani-divyank slide" src="photo_shravani_divyank2.jpg" alt="Shravani and Divyank">
+                <img class="shravani-divyank slide" src="photo_shravani_divyank3.jpg" alt="Shravani and Divyank">
             </div>
         </div>
         <div class="photo-section">
@@ -135,6 +130,7 @@
             <div class="slideshow-container">
                 <img class="saahil-divyank slide" src="photo_saahil_divyank1.jpg" alt="Saahil and Divyank">
                 <img class="saahil-divyank slide" src="photo_saahil_divyank2.jpg" alt="Saahil and Divyank">
+                <img class="saahil-divyank slide" src="photo_saahil_divyank3.jpg" alt="Saahil and Divyank">
             </div>
         </div>
         <div class="photo-section">
@@ -143,6 +139,8 @@
             <div class="slideshow-container">
                 <img class="group-photos slide" src="group_photo1.jpg" alt="Group Photo">
                 <img class="group-photos slide" src="group_photo2.jpg" alt="Group Photo">
+                <img class="group-photos slide" src="group_photo3.jpg" alt="Group Photo">
+                <img class="group-photos slide" src="group_photo4.jpg" alt="Group Photo">
             </div>
         </div>
     </div>
